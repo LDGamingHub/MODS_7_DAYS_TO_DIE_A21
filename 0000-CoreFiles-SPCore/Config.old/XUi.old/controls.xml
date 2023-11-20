@@ -1,0 +1,167 @@
+<configs>
+
+	<append xpath="/controls">
+	
+		<SPCORE_recipe_entry>
+			<rect controller="SPRecipeEntry, SPCore" tooltip="" height="120" width="250" style="hover, press" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]">
+				<sprite depth="2" name="background" pos="0,1" color="0,33,45,238" type="sliced"/>
+				<sprite depth="3" name="border" sprite="menu_empty3px" hover_color="[beige]" color="[black]" type="sliced" globalopacity="true" fillcenter="false"/>
+				
+				<sprite depth="8" name="Arrow" sprite="menu_empty3px" size="8,116" pos="0,-60" pivot="center" foregroundlayer="true"/>
+				
+				<grid pos="4,0" depth="12" rows="2" cols="5" cell_width="49" cell_height="60" repeat_content="false">
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item1" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount1" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item2" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount2" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item3" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount3" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item4" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount4" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item5" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount5" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item6" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount6" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item7" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount7" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item8" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount8" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item9" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount9" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item10" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount10" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+				</grid>
+			</rect>
+		</SPCORE_recipe_entry>
+
+	<miner_recipe_entry>
+			<rect controller="SPRecipeEntry, SPCore" tooltip="" height="60" width="500" style="hover, press" disabled_font_color="[disabledLabelColor]" enabled_font_color="[labelColor]" >
+				<sprite depth="2" name="background" pos="0,1" color="0,33,45,238" type="sliced"/>
+				<sprite depth="3" name="border" sprite="menu_empty3px" hover_color="[beige]" color="[black]" type="sliced" globalopacity="true" fillcenter="false"/>
+				
+				<sprite depth="8" name="Arrow" sprite="menu_empty3px" size="8,116" pos="0,-60" pivot="center" foregroundlayer="true"/>
+				
+				<grid pos="4,0" depth="12" rows="1" cols="10" cell_width="49" cell_height="60" repeat_content="false">
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item1" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount1" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item2" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount2" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item3" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount3" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item4" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount4" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item5" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount5" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item6" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount6" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item7" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount7" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item8" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount8" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item9" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount9" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect>
+					<rect>
+						<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="50" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+						<sprite depth="4" name="Item10" atlas="ItemIconAtlas" size="45,45" pos="25,-30" pivot="center" foregroundlayer="true" />
+						<label name="ItemCount10" font_size="18" pos="-5,-40" depth="10" size="50,50" justify="right" />
+					</rect> 
+				</grid> 
+			</rect>
+		</miner_recipe_entry>
+
+		<SPCORE_recipe_tool_entry>
+			<rect controller="RecipeInfoToolEntry, SPCore" height="60" width="60" >
+				<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="60" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="4" name="backgroundMain2" sprite="menu_empty3px" width="57" height="57" pos="0,0" color="128,128,128,220" type="sliced" fillcenter="false" />
+				<sprite depth="4" name="Tool" atlas="ItemIconAtlas" size="45,45" pos="30,-30" pivot="center" foregroundlayer="true" />
+				<sprite depth="5" name="ToolState" size="20,20" pos="45,-45" pivot="center" sprite="" foregroundlayer="true" />
+			</rect>
+		</SPCORE_recipe_tool_entry>
+		
+		<SPCORE_recipe_ingredient_entry>
+			<rect controller="RecipeInfoIngredientEntry, SPCore" width="60" height="60">
+				<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="60" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="4" name="backgroundMain2" sprite="menu_empty3px" width="57" height="57" pos="0,0" color="128,128,128,220" type="sliced" fillcenter="false" />
+				<sprite depth="4" name="Ingredient" atlas="ItemIconAtlas" size="45,45" pos="38,-35" pivot="center" foregroundlayer="true" />
+				<label name="IngredientCount" pos="5,-35" depth="5"/>
+			</rect>
+		</SPCORE_recipe_ingredient_entry>
+		
+		<SPCORE_recipe_item_entry>
+			<rect controller="RecipeInfoItemEntry, SPCore" width="60" height="60">
+				<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="60" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="4" name="backgroundMain2" sprite="menu_empty3px" width="57" height="57" pos="0,0" color="128,128,128,220" type="sliced" fillcenter="false" />
+				<sprite depth="4" name="Item" atlas="ItemIconAtlas" size="45,45" pos="30,-30" pivot="center" foregroundlayer="true" />
+				<label name="ItemCount" pos="5,-35" depth="5"/>
+			</rect>
+		</SPCORE_recipe_item_entry>
+		
+		<SPCORE_recipe_block_entry>
+			<rect controller="RecipeInfoBlockEntry, SPCore" width="60" height="60">
+				<sprite depth="4" name="backgroundMain" sprite="menu_empty3px" width="60" height="60" pos="0,0" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="4" name="backgroundMain2" sprite="menu_empty3px" width="57" height="57" pos="0,0" color="128,128,128,220" type="sliced" fillcenter="false" />
+				<sprite depth="4" name="Block" atlas="ItemIconAtlas" size="45,45" pos="38,-35" pivot="center" foregroundlayer="true" />
+				<label depth="5" name="BlockCount" pos="5,-35" foregroundlayer="true" />
+			</rect>
+		</SPCORE_recipe_block_entry>
+	
+	</append>
+
+</configs>

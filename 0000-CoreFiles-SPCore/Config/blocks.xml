@@ -1,0 +1,148 @@
+<configs>
+
+	<append xpath="/blocks">
+	
+		<block name="producertest">
+			<property name="Extends" value="cntHardenedChestSecure" param1="Class"/>
+			<property name="Class" value="Productor, SPCore"/>
+			<property name="Model" value="@:Entities/LootContainers/tier5LootChestPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="MaxDamage" value="10000"/>
+			<property name="SortOrder1" value="B104"/>
+			<property name="SortOrder2" value="0007"/>
+			
+			<!-- Heat produced when a craft is completed -->
+			<property name="HeatMapStrength" value="5"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			
+			<!-- Loot lists for each window, configurable in the loot.xml -->
+			<property name="InputLootList" value="inputSlots"/>
+			<property name="OutputLootList" value="outputSlots"/>
+			<property name="ToolsLootList" value="toolsSlots"/>
+			
+			<!-- Window group -->
+			<property name="WindowGroup" value="producer"/>
+			
+			<!-- Tools items for the ToolsLootList, need to be the same size of the ToolsLootList
+
+			i.e.
+				if the size of the ToolsLootList is 5,3 you have 15 slots, so you need to put 15 items in the list below
+				
+				if the size is 6,1 you have 6 slots, so you need to put 6 items in the list below
+			-->
+			<property name="AllowedToolsItems" value="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT3Chainsaw,meleeToolPickT3Auger,meleeToolSalvageT3ImpactDriver"/>
+			
+			<property class="ProducerRecipes">
+				<property class="Recipe1">
+
+					
+					<property name="Ingredients" value="ammoGasCan" />
+					<property name="IngredientsCount" value="3" />
+					
+					<property name="ItemsProbabilities" value=".1,.1,.1,.1,.1" />
+					<property name="Items" value="terrOreIron,terrOreLead,terrOreCoal,terrOrePotassiumNitrate,terrOreOilDeposit" />
+					<property name="ItemsCount" value="10,10,10,10,10" />
+					
+					<property name="RandomTextKey" value="MINERAI ALEATOIRE" />
+					<property name="CraftTime" value="3" />
+				</property>
+				
+				<property class="Recipe2">
+					<property name="Tool" value="meleeToolPickT3Auger,meleeToolAxeT3Chainsaw" />
+					<property name="ToolDegradation" value="100" />
+					<property name="Ingredients" value="ammoGasCan,resourceOil" />
+					<property name="ItemsProbabilities" value=".1,.1,.1,.1,.1" />
+					<property name="IngredientsCount" value="10,10" />
+					<property name="Items" value="terrOreIron,terrOreLead,terrOreCoal,terrOrePotassiumNitrate,terrOreOilDeposit" />
+					<property name="RandomTextKey" value="MINERAI ALEATOIRE" />
+					<property name="ItemsCount" value="100,100,100,100,100" />
+				</property>
+			</property>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+		
+		<block name="poweredProducertest">
+			<property name="Extends" value="cntHardenedChestSecure" param1="Class"/>
+			<property name="Class" value="PoweredProductor, SPCore"/>
+			<property name="RequiredPower" value="1"/>
+			<property name="LootList" value="hardenedChestT5"/>
+			<property name="ItemTypeIcon" value="lock"/>
+			<property name="Model" value="@:Entities/LootContainers/tier5LootChestPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="MultiBlockDim" value="2,1,1"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="MaxDamage" value="10000"/>
+			<property name="SortOrder1" value="B104"/>
+			<property name="SortOrder2" value="0007"/>
+			
+			<!-- Heat produced when a craft is completed -->
+			<property name="HeatMapStrength" value="5"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			
+			<!-- Loot lists for each window, configurable in the loot.xml -->
+			<property name="InputLootList" value="inputSlots"/>
+			<property name="OutputLootList" value="outputSlots"/>
+			<property name="ToolsLootList" value="toolsSlots"/>
+			
+			<!-- Window group -->
+			<property name="WindowGroup" value="producer"/>
+			
+			<!-- Tools items for the ToolsLootList, need to be the same size of the ToolsLootList
+
+			i.e.
+				if the size of the ToolsLootList is 5,3 you have 15 slots, so you need to put 15 items in the list below
+				
+				if the size is 6,1 you have 6 slots, so you need to put 6 items in the list below
+			-->
+			<property name="AllowedToolsItems" value="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT3Chainsaw,meleeToolPickT3Auger,meleeToolSalvageT3ImpactDriver"/>
+			
+			<property class="ProducerRecipes">
+				<property class="Recipe1">
+					<property name="BlockNameNeeded" value="terrStone,terrDirt" />
+					<property name="BlockCountNeeded" value="10,3" />
+					<property name="BlocksSearchRange" value="2" />
+					
+					<property name="Ingredients" value="ammoGasCan" />
+					<property name="IngredientsCount" value="3" />
+					
+					<property name="ItemsProbabilities" value=".1,.1,.1,.1,.1" />
+					<property name="Items" value="terrOreIron,terrOreLead,terrOreCoal,terrOrePotassiumNitrate,terrOreOilDeposit" />
+					<property name="ItemsCount" value="10,10,10,10,10" />
+					
+					<property name="RandomTextKey" value="MINERAI ALEATOIRE" />
+					<property name="CraftTime" value="3" />
+				</property>
+				
+				<property class="Recipe2">
+					<property name="Tool" value="meleeToolPickT3Auger,meleeToolAxeT3Chainsaw" />
+					<property name="ToolDegradation" value="100" />
+					<property name="Ingredients" value="ammoGasCan,resourceOil" />
+					<property name="ItemsProbabilities" value=".1,.1,.1,.1,.1" />
+					<property name="IngredientsCount" value="10,10" />
+					<property name="Items" value="terrOreIron,terrOreLead,terrOreCoal,terrOrePotassiumNitrate,terrOreOilDeposit" />
+					<property name="RandomTextKey" value="MINERAI ALEATOIRE" />
+					<property name="ItemsCount" value="100,100,100,100,100" />
+				</property>
+			</property>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+	
+	</append>
+	
+</configs>

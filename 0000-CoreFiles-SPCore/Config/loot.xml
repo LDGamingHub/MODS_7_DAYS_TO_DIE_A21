@@ -1,0 +1,37 @@
+<configs>
+
+	<append xpath="/lootcontainers">
+		
+		<lootcontainer name="toolsSlots" count="0" size="5,1" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="toolsSlots2X1" count="0" size="2,1" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="toolsSlots2X2" count="0" size="2,2" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="toolsSlots4X1" count="0" size="4,1" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="toolsSlots1X2" count="0" size="1,2" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="toolsSlots1X3" count="0" size="1,3" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+
+		<lootcontainer name="toolsSlots5X5" count="0" size="5,2" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+			
+		<lootcontainer name="toolsSlots1" count="0" size="3,1" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		
+		<lootcontainer name="inputSlots" count="0" size="5,2" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="inputSlotsMiner" count="0" size="2,2" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="inputSlotsDrink" count="0" size="6,2" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="inputSlotsButcher" count="0" size="5,2" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="inputSlotsDNA" count="0" size="5,1" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>			
+		<lootcontainer name="inputSlots1" count="0" size="5,4" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="inputSlotsCrusher" count="0" size="5,2" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		
+		<lootcontainer name="outputSlots" count="0" size="3,5" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		
+		<lootcontainer name="outputSlots1" count="0" size="5,5" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="outputSlotsMiner" count="0" size="6,4" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="outputSlotsDrink" count="0" size="8,5" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="outputSlotsButcher" count="0" size="5,4" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+		<lootcontainer name="outputSlotsCrusher" count="0" size="5,4" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+
+		<lootcontainer name="outputSlotsDNA" count="0" size="5,1" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate"/>
+
+
+	</append>
+
+</configs>

@@ -1,0 +1,5 @@
+key,english,french
+
+poweredProducer,"Powered producer","Producteur alimenté"
+producer,"Producer","Producteur"
+UIAutoMiner,"\n[DECEA3]  INFORMATION:[ffffff]\n\n  Requires 4 blocks of Stone Terrain nearby.\n  Requires Gasoline to operate.\n  Adding Drill Bits will increase the speed and\n  increase the odds to find the rarer ore.\n  Drill Bits can only be Found in Oblivion Crates."

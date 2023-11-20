@@ -1,0 +1,60 @@
+<configs>
+
+	<append xpath="//ruleset">
+	
+		<window_group name="producer" open_backpack_on_open="true" controller="XUiC_ProducerWindowGroup, SPCore" close_compass_on_open="true">
+			<window name="producerToolsWindow"/>
+			<window name="producerInputWindow"/>
+			<window name="producerOutputWindow"/>
+			<window name="producerRecipesListWindow"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="miner" open_backpack_on_open="true" controller="XUiC_ProducerWindowGroup, SPCore" close_compass_on_open="true">
+			<window name="minerRecipesListWindow"/>
+			<window name="minerTitleInfoWindow"/>	
+			<window name="minerToolsWindow"/>
+			<window name="minerInputWindow"/>
+			<window name="minerOutputWindow"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="drinkDispenser" open_backpack_on_open="true" controller="XUiC_ProducerWindowGroup, SPCore" close_compass_on_open="true">
+
+		<window name="drinkRecipesListWindow"/> 
+		<!--	<window name="drinkTitleInfoWindow"/> -->	
+			<window name="drinkToolsWindow"/>
+			<window name="drinkInputWindow"/>
+			<window name="drinkOutputWindow"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="butcherTable" open_backpack_on_open="true" controller="XUiC_ProducerWindowGroup, SPCore" close_compass_on_open="true">
+			<window name="butcherRecipesListWindow"/>
+			<window name="butcherToolsWindow"/>
+			<window name="butcherInputWindow"/>
+			<window name="butcherOutputWindow"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+		<window_group name="Scrapper" open_backpack_on_open="true" controller="XUiC_ProducerWindowGroup, SPCore" close_compass_on_open="true">
+			<window name="butcherRecipesListWindow"/>
+			<window name="scrapperToolsWindow"/>
+			<window name="butcherInputWindow"/>
+			<window name="butcherOutputWindow"/>
+			<window name="windowNonPagingHeader" />
+		</window_group>
+
+	
+	</append>
+	
+	<set xpath="//window_group[@name='backpack']">
+	
+		<window name="itemInfoPanel"/>
+		<window name="recipeInfoPanel" />
+		<window name="emptyInfoPanel" />
+		<window name="windowBackpack"/>
+	
+	</set>
+
+</configs>

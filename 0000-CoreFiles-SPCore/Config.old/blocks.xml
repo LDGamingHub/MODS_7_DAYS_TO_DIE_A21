@@ -1,0 +1,201 @@
+<configs>
+
+	<append xpath="/blocks">
+	
+		<block name="producertest">
+			<property name="Class" value="Productor, SPCore"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="LootContainers/chest01" param1="main_mesh"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			
+			<property name="HeatMapStrength" value="5"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			
+			<property name="InputLootList" value="inputSlots"/>
+			<property name="OutputLootList" value="outputSlots"/>
+			<property name="ToolsLootList" value="toolsSlots"/>
+			
+			<property name="WindowGroup" value="producer"/>
+			
+			<property name="AllowedToolsItems" value="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT3Chainsaw,meleeToolPickT3Auger,meleeToolSalvageT3ImpactDriver,meleeToolSalvageT2Ratchet"/> <!-- this have to be the same size of the ToolsLootList -->
+			
+			<property class="ProducerRecipes">
+				<property class="Recipe1">
+					<property name="Ingredients" value="drinkJarEmpty" />
+					<property name="IngredientsCount" value="1" />
+					<property name="Items" value="drinkJarBoiledWater" />
+					<property name="ItemsCount" value="1" />
+					<property name="CraftTime" value="6" />
+					<property name="ItemsProbabilities" value="1" />
+				</property>
+				
+				<property class="Recipe2">
+					<property name="Ingredients" value="drinkJarEmpty" />
+					<property name="IngredientsCount" value="1" />
+					<property name="Items" value="drinkJarBoiledWater" />
+					<property name="ItemsCount" value="2" />
+					<property name="CraftTime" value="6" />
+					<property name="ItemsProbabilities" value="1" />
+				</property>
+				<property class="Recipe3">
+					<property name="Ingredients" value="drinkJarEmpty" />
+					<property name="IngredientsCount" value="1" />
+					<property name="Items" value="drinkJarBoiledWater" />
+					<property name="ItemsCount" value="3" />
+					<property name="CraftTime" value="6" />
+					<property name="ItemsProbabilities" value="1" />
+				</property>
+				<property class="Recipe4">
+					<property name="Ingredients" value="drinkJarEmpty" />
+					<property name="IngredientsCount" value="1" />
+					<property name="Items" value="drinkJarBoiledWater" />
+					<property name="ItemsCount" value="4" />
+					<property name="CraftTime" value="6" />
+					<property name="ItemsProbabilities" value="1" />
+				</property>
+				<property class="Recipe5">
+					<property name="Ingredients" value="drinkJarEmpty" />
+					<property name="IngredientsCount" value="1" />
+					<property name="Items" value="drinkJarBoiledWater" />
+					<property name="ItemsCount" value="5" />
+					<property name="CraftTime" value="6" />
+					<property name="ItemsProbabilities" value="1" />
+				</property>
+				<property class="Recipe6">
+					<property name="Ingredients" value="drinkJarEmpty" />
+					<property name="IngredientsCount" value="1" />
+					<property name="Items" value="drinkJarBoiledWater" />
+					<property name="ItemsCount" value="6" />
+					<property name="CraftTime" value="6" />
+					<property name="ItemsProbabilities" value="1" />
+				</property>
+				<property class="Recipe7">
+					<property name="Ingredients" value="drinkJarEmpty" />
+					<property name="IngredientsCount" value="1" />
+					<property name="Items" value="drinkJarBoiledWater" />
+					<property name="ItemsCount" value="7" />
+					<property name="CraftTime" value="6" />
+					<property name="ItemsProbabilities" value="1" />
+				</property>
+				<property class="Recipe8">
+					<property name="Ingredients" value="drinkJarEmpty" />
+					<property name="IngredientsCount" value="1" />
+					<property name="Items" value="drinkJarBoiledWater" />
+					<property name="ItemsCount" value="8" />
+					<property name="CraftTime" value="6" />
+					<property name="ItemsProbabilities" value="1" />
+				</property>
+			</property>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+		
+		<block name="producertest1">
+			<property name="Class" value="Productor, SPCore"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="LootContainers/chest01" param1="main_mesh"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			
+			<property name="HeatMapStrength" value="5"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			
+			<property name="InputLootList" value="inputSlots1"/>
+			<property name="OutputLootList" value="outputSlots1"/>
+			<property name="ToolsLootList" value="toolsSlots1"/>
+			
+			<property name="WindowGroup" value="producer"/>
+			
+			<property class="ProducerRecipes">
+				<property class="Recipe1">
+					<property name="Buffs" value="buffBurningMolotov"/>
+					<property name="BuffsRange" value="10"/>
+					<property name="Hidden" value="false"/>
+					<property name="Ingredients" value="drinkJarEmpty,foodCropYuccaFruit" />
+					<property name="IngredientsCount" value="1,2" />
+					<property name="Items" value="drinkJarYuccaJuice" />
+					<property name="ItemsProbabilities" value="1" />
+					<property name="CraftTime" value="1" />
+					<property name="ItemsCount" value="1" />
+				</property>
+			</property>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+		
+		<block name="poweredproducertest">
+			<property name="Class" value="PoweredProductor, SPCore"/>
+			<property name="Material" value="MwoodReinforced"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="LootContainers/chest01" param1="main_mesh"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			
+			<property name="RequiredPower" value="10"/>
+			<property name="HeatMapStrength" value="5"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			
+			<property name="InputLootList" value="inputSlots"/>
+			<property name="OutputLootList" value="outputSlots"/>
+			<property name="ToolsLootList" value="toolsSlots"/>
+			
+			<property name="WindowGroup" value="producer"/>
+			
+			<property name="AllowedToolsItems" value="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT3Chainsaw,meleeToolPickT3Auger,meleeToolSalvageT3ImpactDriver,meleeToolSalvageT2Ratchet"/> <!-- this have to be the same size of the ToolsLootList -->
+			
+			<property class="ProducerRecipes">
+				<property class="Recipe1">
+					<property name="Tool" value="meleeToolPickT3Auger" />
+					<property name="Ingredients" value="ammoGasCan" />
+					<property name="IngredientsCount" value="3" />
+					<property name="Items" value="terrOreIron,terrOreLead,terrOreCoal,terrOrePotassiumNitrate,terrOreOilDeposit" />
+					<property name="ItemsProbabilities" value="1,1,.2,.1,.1" />
+					<property name="ItemsCount" value="10,10,10,10,10" />
+				</property>
+				
+				<property class="Recipe2">
+					<property name="Tool" value="meleeToolPickT3Auger" />
+					<property name="Ingredients" value="ammoGasCan" />
+					<property name="IngredientsCount" value="3" />
+					<property name="Items" value="terrOreIron,terrOreLead,terrOreCoal,terrOrePotassiumNitrate,terrOreOilDeposit" />
+					<property name="ItemsProbabilities" value="1,1,.1,.2,.3" />
+					<property name="ItemsCount" value="10,10,10,10,10" />
+				</property>
+			</property>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+			<drop event="Destroy" name="resourceWood" count="1,3"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="FilterTags" value="MC_building,SC_loot"/>
+		</block>
+	
+	</append>
+
+</configs>

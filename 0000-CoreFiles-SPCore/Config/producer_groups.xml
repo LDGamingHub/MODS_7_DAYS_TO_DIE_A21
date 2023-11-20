@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<producer_groups>
+	
+	<producer_group name="group1" selectOnlyOne="true">
+		<item name="gunHandgunT1PistolSchematic" />
+		<item name="gunHandgunT2Magnum44Schematic" />
+		<item name="gunHandgunT3DesertVultureSchematic" />
+		<item name="gunShotgunT1DoubleBarrelSchematic" />
+		<item name="gunShotgunT2PumpShotgunSchematic" />
+	</producer_group>
+	
+	<producer_group name="group2" selectOnlyOne="false">
+		<item name="gunHandgunT1PistolSchematic" />
+		<item name="gunHandgunT2Magnum44Schematic" />
+		<item name="gunHandgunT3DesertVultureSchematic" />
+		<item name="gunShotgunT1DoubleBarrelSchematic" />
+		<item name="gunShotgunT2PumpShotgunSchematic" />
+	</producer_group>
+	
+</producer_groups>
