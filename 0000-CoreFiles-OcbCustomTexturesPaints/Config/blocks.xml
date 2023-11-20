@@ -1,0 +1,10 @@
+<configs>
+	<append xpath="/blocks">
+		<block name="test_green" shapes="all">
+			<property name="Material" value="Mwood_shapes"/>
+			<property name="Shape" value="New"/>
+			<property name="Texture" value="test_green"/>
+			<property name="UiBackgroundTexture" value="test_green"/>
+		</block>
+	</append>
+</configs>
